@@ -1,32 +1,40 @@
-# Prerequisites
-*.d
+######################################
+# Visual Studio per-user settings data
+######################################
+*.suo
+*.user
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+####################
+# Build/Test folders
+####################
+**/.vs/
+**/bin/
+**/obj/
+**/TestResults/
+**/Temp/
+**/NuGet.exe
+**/buildlogs/
+**/Deployment/
+**/packages
+**/launchSettings.json
+**/Debug/
 
-# Precompiled Headers
-*.gch
-*.pch
+**/project.lock.json
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+**/.vscode
+**/.idea
+*.userprefs
 
-# Fortran module files
-*.mod
-*.smod
+**/.ionide/**
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+/Tools/LambdaTestTool/Amazon.Lambda.TestTool/ExternalCommands/App/**
 
-# Executables
-*.exe
-*.out
-*.app
+**/node_modules/
+**/TestGenerations/
+/Blueprints/YeomanGenerator/generator-aws-lambda-dotnet/Blueprints/**
+/Blueprints/YeomanGenerator/generator-aws-lambda-dotnet/app/manifest.js
+/Tools/LambdaTestTool/Amazon.Lambda.TestTool/ExternalCommands/App
+global.json
+
+**/cdk.out/**
+**/.DS_Store
