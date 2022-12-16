@@ -16,18 +16,19 @@ public class Function
     /// <param name="input"></param>
     /// <param name="context"></param>
     /// <returns></returns>
-    public async Task<User> FunctionHandler(Guid  input, ILambdaContext context)
+    public async Task<User> FunctionHandler(User  input, ILambdaContext context)
     {
         var dynamoDbContext = new DynamoDBContext(new AmazonDynamoDBClient());
-        var user = await dynamoDbContext.LoadAsync<User>(input);
-        return user;
+
+        await dynamoDbContext.SaveAsync<User>(input);
+
+        return input;
     }
-
-
 
 
     public class User {
 
+        [DynamoDBProperty]
         public string Name { get; set; }
 
         [DynamoDBHashKey]
