@@ -17,7 +17,7 @@
     "framework"            : "net6.0",
     "function-description" : "My First AWS Lambda",
     "package-type"         : "Zip",
-    "function-role"        : "arn:aws:iam::776830679305:role/lambda_exec_AwsLambdaDemo",
+    "function-role"        : "arn:aws:iam::776830679305:role/lambda_exec_AwsLambdaDemo-0",
     "function-architecture" : "x86_64",
     "function-subnets"      : "",
     "function-security-groups" : "",
